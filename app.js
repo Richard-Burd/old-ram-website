@@ -5,11 +5,9 @@ const app = express();
 let PORT = process.env.PORT || 3000;
 app.listen(PORT);
 
-app.use(express.static("public"));
-
-
 app.use(expressLayouts)
 
+app.use(express.static("public"));
 
 app.set('view engine', 'ejs')
 
