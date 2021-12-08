@@ -9,6 +9,8 @@ app.use(expressLayouts)
 
 app.use(express.static("public"));
 
+app.use('/favicon.ico', express.static('public/favicon.ico'));
+
 app.set('view engine', 'ejs')
 
 app.use(express.static("views", {
